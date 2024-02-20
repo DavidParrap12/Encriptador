@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <title>Encriptador Challenger</title>
+</head>
+
+<body>
+
+
+    <main>
+        <section class="seccion1">
+            <header>
+                <img class="Logo" src="Imagenes/Logo-1.png" alt="Logo">
+            </header>
+            <div class="contenedorcajatexto">
+                <textarea  id="cajatexto" placeholder="Ingrese el texto aqui" class="cajatexto"></textarea>
+            </div>
+            <div class="alerta">
+                <p>&#9888; Solo letras minúsculas y sin acentos</p>
+            </div>  
+            <div class="contenedor-botones">
+                <input type="button" class="btn-encriptar"
+                value="Encriptar" onclick="encriptar()" id="btn-encriptar">
+                <input type="button" class="btn-desencriptar"
+                value="Desencriptar" onclick="desencriptar()" id="btn-desencriptar">
+            </div>
+        </section>
+        <section class="seccion2">
+            <div class="contenedorimagen2">
+                <img src="Imagenes/Muñeco.png" alt="imagen2" id="imagen2">
+            </div>
+            <div class="contenedor-parrafo" id="mensaje-encriptado" >
+                <h3 id="titulo-mensaje">!Ningun mensaje fue <br> encontrado!</h3>
+                <p id="parrafo">Ingresa el texto que desees encriptar o <br> desencriptar</p>
+            </div>
+            <div class="contenedor-resultado" id="contenedor-resultado">
+                <p class="texto-resultado"></p>
+            </div>
+        </section>
+        <section class="msg-box">
+                <textarea class="text-input" id="msg" placeholder="Mensaje Encriptado" rows="5" cols="5"></textarea>
+                <input class="btn" type="button" value="Copiar" id="btn-copy" style="display: none;">
+        </section>
+    </main>
+    <script src="script.js"></script>
+
+
+</body>
+</html>
